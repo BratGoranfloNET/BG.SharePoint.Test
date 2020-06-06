@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+  <CustomAction
+  Id="CreateButton"
+  RegistrationType="ContentType"
+  RegistrationId="0x0100E7452B68978AE84F8146E787E97A08AC"
+  Location="CommandUI.Ribbon.ListView"
+  Rights="EditListItems">
+    <CommandUIExtension>
+      <CommandUIDefinitions>
+        <CommandUIDefinition
+         Location="Ribbon.ListItem.Actions.Controls._children">
+          <Button
+           Id="Ribbon.ListItem.Actions.Controls.CreateButton"
+           Alt="Сделать записи"
+           Sequence="10000"
+           Image16by16="/_layouts/15/BG.SharePoint.Test/images/createitem1616.png"
+           Image32by32="/_layouts/15/BG.SharePoint.Test/images/createitem1616.png"
+           Command="CreateButtonCommand"
+           LabelText="Сделать записи"
+           TemplateAlias="o1"
+           CommandType="General"/>
+        </CommandUIDefinition>
+      </CommandUIDefinitions>
+      <CommandUIHandlers>
+        <CommandUIHandler
+         Command="CreateButtonCommand"
+         CommandAction="javascript:showDialog();"
+         EnabledScript="javascript:EnableDisableButton();"/>
+      </CommandUIHandlers>
+    </CommandUIExtension>
+  </CustomAction>
+
+  <CustomAction Id="Ribbon.Library.Actions.Scripts"
+                  Location="ScriptLink"
+                  ScriptSrc="/_layouts/15/BG.SharePoint.Test/JS/populate-list.js" />
+</Elements>

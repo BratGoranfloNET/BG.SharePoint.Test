@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="ВебЧасть" Id="d3674dbe-ec8c-4bd3-aa7f-d4ee9b4ae7d6" Scope="Site" Title="BG.SharePoint.Test Feature">
+  <ElementManifests>
+    <ElementManifest Location="BGWebPart\Elements.xml" />
+    <ElementFile Location="BGWebPart\BGWebPart.webpart" />
+    <ElementManifest Location="CreateButton\Elements.xml" />
+  </ElementManifests>
+</Feature>

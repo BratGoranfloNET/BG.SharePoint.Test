@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="3085e441-cba2-48b5-82be-c0cdec8b4082" ResetWebServer="TRUE" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="BG.SharePoint.Test.dll" DeploymentTarget="WebApplication">
+      <SafeControls>
+        <SafeControl Assembly="BG.SharePoint.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cb13b63e9bb035c2" Namespace="BG.SharePoint.Test.WebParts.BGWebPart" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Layouts\BG.SharePoint.Test\Images\createitem1616.png" />
+    <TemplateFile Location="Layouts\BG.SharePoint.Test\Images\createitem3232.png" />
+    <TemplateFile Location="Layouts\BG.SharePoint.Test\JS\modal-dialog.js" />
+    <TemplateFile Location="Layouts\BG.SharePoint.Test\Services\TestService.svc" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="BG.SharePoint.Test_BGFeature\Feature.xml" />
+  </FeatureManifests>
+</Solution>

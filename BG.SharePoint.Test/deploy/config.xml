@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Config>
+    <!-- URL-адрес сайта коллекции -->
+   <PortalUrl>http://s001itd-0015/sites/cloner</PortalUrl>       
+
+    <!-- Системные параметры -->
+    <SolutionName>BG.SharePoint.Test.wsp</SolutionName>    
+        
+</Config>
